@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dajaedaneoung">
         <activity
+            android:name=".MainActivity5"
+            android:exported="false"
+            android:theme="@style/Transparent"/>
+        <activity
             android:name=".MainActivity4"
             android:exported="false" />
         <activity

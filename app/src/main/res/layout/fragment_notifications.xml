@@ -1,22 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.notifications.NotificationsFragment">
 
-    <TextView
-        android:id="@+id/text_notifications"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back11"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="39dp"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/notosansreg"
+                    android:text="마이페이지"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="39dp"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cilsettings" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="125dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/group374" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="370dp"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/group376" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="10dp"
+                android:background="#ebebeb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="공유한 재능"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosansmed"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/group377" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myrecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

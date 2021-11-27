@@ -79,12 +79,25 @@
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/d4" />
 
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/dt"/>
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="80dp"/>
+
         </LinearLayout>
 
     </ScrollView>
 
     <ImageView
-
+        android:id="@+id/dimage"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_gravity="bottom"

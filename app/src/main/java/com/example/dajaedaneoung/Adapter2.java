@@ -2,6 +2,7 @@ package com.example.dajaedaneoung;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -45,14 +46,17 @@ public class Adapter2 extends RecyclerView.Adapter<ViewHolder2> {
         myViewHolder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, position+"번째 텍스트 뷰 클릭" + arrayList.get(position).cata, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, position +"번째 텍스트 뷰 클릭", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(context, MainActivity4.class);
+                context.startActivity(intent);
             }
         });
 
         myViewHolder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, position+"번째 버튼 클릭" + arrayList.get(position).cata, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, position+"번째 버튼 클릭", Toast.LENGTH_SHORT).show();
             }
         });
 

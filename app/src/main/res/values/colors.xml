@@ -10,5 +10,6 @@
     <color name="appmain">#fe4819</color>
     <color name="appmain2">#0a847c</color>
     <color name="appmain3">#CCCCCC</color>
+    <color name="transparent">#80000000</color>
 
 </resources>

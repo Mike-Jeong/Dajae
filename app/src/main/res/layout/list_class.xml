@@ -10,12 +10,13 @@
    <ImageView
     android:id="@+id/classph"
     android:layout_marginLeft="16dp"
+       android:layout_marginBottom="25dp"
     android:layout_width="168dp"
     android:layout_height="279dp"
     android:layout_weight="1"
     android:backgroundTint="@color/white"
     android:scaleType="fitXY"
-    android:src="@drawable/card_1"/>
+    android:src="@drawable/card1"/>
 
     <ImageButton
         android:id="@+id/classbtn"

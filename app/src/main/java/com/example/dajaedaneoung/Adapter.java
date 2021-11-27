@@ -46,7 +46,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         myViewHolder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, position+"번째 텍스트 뷰 클릭" + arrayList.get(position).cata, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, arrayList.get(position).cata, Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, MainActivity2.class);
                 context.startActivity(intent);
             }

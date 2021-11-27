@@ -1,10 +1,15 @@
 package com.example.dajaedaneoung;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.graphics.Color;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
@@ -25,11 +30,36 @@ public class MainActivity2 extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
+    ImageView backward;
+    Button t1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        t1 = (Button) findViewById(R.id.t1);
+
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
+                startActivity(intent);
+
+            }
+        });
+
+        backward = (ImageView)findViewById(R.id.back11);
+
+        backward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                finish();
+
+            }
+        });
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setTabTextColors(Color.parseColor("#7C7C7C"), Color.parseColor("#FE4819"));
@@ -50,6 +80,8 @@ public class MainActivity2 extends AppCompatActivity {
             public void onConfigureTab(@NonNull @NotNull TabLayout.Tab tab, int position) {
                 TextView textView = new TextView(MainActivity2.this);
                 textView.setText(tabElement.get(position));
+                textView.setTextColor(Color.parseColor("#323232"));
+                textView.setGravity(Gravity.CENTER);
                 tab.setCustomView(textView);
             }
         }).attach();

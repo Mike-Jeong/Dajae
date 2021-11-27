@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_writeChoice"
+    android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="288dp"
+            android:layout_height="349dp"
+            android:src="@drawable/group333"
+            android:scaleType="fitXY"/>
+
+        <android.widget.Button
+            android:id="@+id/okbtn"
+            android:layout_marginTop="140dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:background="#00000000"
+            android:fontFamily="@font/notosansmed"
+            android:text="확인"
+            android:textSize="16sp"
+            android:scaleType="fitXY"
+            android:textColor="@color/black" />
+
+</FrameLayout>
+

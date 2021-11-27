@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="clip_vertical">
+
+   <ImageView
+    android:id="@+id/classph"
+    android:layout_marginLeft="16dp"
+    android:layout_width="168dp"
+    android:layout_height="279dp"
+    android:layout_weight="1"
+    android:backgroundTint="@color/white"
+    android:scaleType="fitXY"
+    android:src="@drawable/card_1"/>
+
+    <ImageButton
+        android:id="@+id/classbtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="165dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cilheart"
+        android:background="#00000000"
+        app:tint="@color/white"/>
+
+
+</FrameLayout>

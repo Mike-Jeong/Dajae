@@ -90,7 +90,7 @@
 
             <android.widget.Button
                 android:id="@+id/t1"
-                android:layout_width="95dp"
+                android:layout_width="60dp"
                 android:layout_height="25dp"
                 android:background="@drawable/edge"
                 android:text="전체"
@@ -109,7 +109,7 @@
                 android:id="@+id/t2"
                 android:layout_width="60dp"
                 android:layout_height="25dp"
-                android:background="@drawable/edge"
+                android:background="@drawable/edge3"
                 android:text="위치"
                 android:drawableEnd="@drawable/more"
                 android:paddingEnd="10dp"
@@ -128,7 +128,7 @@
                 android:id="@+id/t3"
                 android:layout_width="80dp"
                 android:layout_height="25dp"
-                android:background="@drawable/edge"
+                android:background="@drawable/edge3"
                 android:text="수업형태"
                 android:drawableEnd="@drawable/more"
                 android:paddingEnd="10dp"
